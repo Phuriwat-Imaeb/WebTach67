@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Personal Page</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        body {
+            background-color: #f8f9fa;
+        }
+        .nav-tabs {
+            background-color: #0b9e66b0;
+            border-radius: 5px;
+            padding: 5px;
+        }
+        .nav-tabs .nav-link {
+            color: white;
+            border: none;
+        }
+        .nav-tabs .nav-link.active {
+            background-color: #1cda91;
+            color: white;
+            border-radius: 5px;
+        }
+        .tab-content {
+            margin-top: 20px;
+            background: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+        h2 {
+            border-bottom: 3px solid #004d17;
+            padding-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container mt-3">
+        <ul class="nav nav-tabs" id="myTab" role="tablist">
+            <li class="nav-item" role="presentation">
+                <button class="nav-link active" id="about-tab" data-bs-toggle="tab" data-bs-target="#about" type="button" role="tab">About Me</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="timetable-tab" data-bs-toggle="tab" data-bs-target="#timetable" type="button" role="tab">Time Table</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="myplace-tab" data-bs-toggle="tab" data-bs-target="#myplace" type="button" role="tab">My Place</button>
+            </li>
+            <li class="nav-item" role="presentation">
+                <button class="nav-link" id="friends-tab" data-bs-toggle="tab" data-bs-target="#friends" type="button" role="tab">My Friends</button>
+            </li>
+        </ul>
+        
+        <div class="tab-content" id="myTabContent">
+            <div class="tab-pane fade show active" id="about" role="tabpanel">
+                <h2>About Me</h2>
+                <p>ชื่อ นายภูริวัฑฒ์ อิ่มเอิบ อายุ 19ปี ศึกษาอยู่ มหาลัยศิลปากร คณะวิทยาศาสตร์ สาขา เทคโนโลยีสารสนเทศ</p>
+            </div>
+            <div class="tab-pane fade" id="timetable" role="tabpanel">
+                <h2>Time Table</h2>
+                <div class="img-container text-center">
+                    <img src="img\Time Table.png" alt="Time Table" class="img-fluid">
+                </div>
+            </div>
+            <div class="tab-pane fade" id="myplace" role="tabpanel">
+                <h2>My Place</h2>
+                <div class="img-container text-center">
+                    <img src="img/e_tong.jpg" alt="My Place" class="img-fluid">
+                </div>
+            </div>
+            <div class="tab-pane fade" id="friends" role="tabpanel">
+                <h2>My Friends</h2>
+                <ul>
+                    <li>ปาลิกา</li>
+                    <li>ทรรศนีย์พร</li>
+                    <li>กลมชนก</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
